@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+html {
+    background-image: url("images/water.jpg");
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    text-align: center;
+      padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+    .column {
+     -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+}
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      border-radius: 15px;
+      border: 3px ridge silver;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Khalid Image Gallery</h1>
+  <p>Some of Khalid's most iconic photos all in one place!</p>
+</header>
+<main>
+
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+
+  <nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        <li><a href="videos.html" class="current">Videos</a></li>
+        <li><a href="gallery.html" class="current">Gallery</a></li>
+        <li><a href="discography.html">Coming soon...</a></li>
+        <li><a href="maillist.html" class="current">Coming soon..</a></li>
+        <li><a href="index.html">homepage</a></li>
+    	</ul>
+	</nav>
+
+
+    <!-- Photo Grid -->
+    <div class="row"> 
+    <div class="column">
+        <img src="images/1.jpg" style="width:100%">
+        <img src="images/2.jpg" style="width:100%">
+        <img src="images/3.jpg" style="width:100%">
+        <img src="images/4.jpeg" style="width:100%">
+        <img src="images/5.jpg" style="width:100%">
+        <img src="images/6.jpg" style="width:100%">
+        <img src="images/7.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="images/8.jpg" style="width:100%">
+        <img src="images/9.jpeg" style="width:100%">
+        <img src="images/10.jpg" style="width:100%">
+        <img src="images/11.jpg" style="width:100%">
+        <img src="images/12.jpg" style="width:100%">
+        
+    </div>  
+    <div class="column">
+        <img src="images/14.jpg" style="width:100%">
+        <img src="images/15.jpg" style="width:100%">
+        <img src="images/16.jpg" style="width:100%">
+        <img src="images/17.jpeg" style="width:100%">
+        <img src="images/18.jpg" style="width:100%">
+        <img src="images/19.jpg" style="width:100%">
+        
+    </div>
+    <div class="column">
+        <img src="images/21.jpg" style="width:100%">
+        <img src="images/22.jpg" style="width:100%">
+        <img src="images/23.jpg" style="width:100%">
+        <img src="images/24.jpg" style="width:100%">
+        <img src="images/25.jpg" style="width:100%">
+        <img src="images/26.webp" style="width:100%">
+    </div>
+    </div>
+
+    </main>
+
+    <script>
+      window.onload = function() {
+        var d = new Date();
+        document.getElementById("copyright").innerHTML = d.getFullYear();
+      }
+    </script>
+
+<footer>
+  <p>&copy; <span id="copyright"></span> Griffin Embree</p>
+</footer>
+</body>
+
+</html>
